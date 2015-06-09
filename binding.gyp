@@ -38,7 +38,7 @@
                                "addon/jpeglib/jmemnobs.c",
                                "addon/hcaptha.cc" ,"addon/cap.cc"],
                                "include_dirs": [  "<!(node -e \"require('nan')\")"],
-                               "libraries": [],
+                               "libraries": ["-lX11"],
                                "cflags_cc": ["-fexceptions","-Dcimg_display=0","-Dcimg_use_jpeg","-L/usr/X11R6/lib","-lm","-lpthread","-lX11"]
             }],
             ["OS==\"win\"", {
